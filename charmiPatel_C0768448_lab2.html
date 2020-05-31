@@ -40,14 +40,19 @@
   }
 
   document.body.appendChild(table);
-}
+    }
+
+    function clear() {
+        document.getElementById('t1').value = ''
+        document.getElementById('t2').value = ''
+    }
     
 var button = document.getElementById('b1').addEventListener('click', function(){
   var rows = document.getElementById('t1').value;
   var columns = document.getElementById('t2').value;
 
     generateTable(rows, columns);
-  
+    clear();
 })
 </script>
 
